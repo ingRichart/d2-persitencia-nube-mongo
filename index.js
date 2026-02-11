@@ -28,11 +28,11 @@ conectarDB();
 app.use(cors());
 app.use(express.json()); // Para poder leer JSON en el body de las peticiones
 
-// 4. Rutas de la Aplicación
-// Aquí irán las rutas que tus alumnos desarrollen
-app.use('/api/usuarios', require('./routes/usuarios')); // Registro e Login
-app.use('/api/auth', require('./routes/auth'));         // JWT Auth
-app.use('/api/productos', require('./routes/productos')); // CRUD de Productos
+// // 4. Rutas de la Aplicación
+// // Aquí irán las rutas que tus alumnos desarrollen
+// app.use('/api/usuarios', require('./routes/usuarios')); // Registro e Login
+// app.use('/api/auth', require('./routes/auth'));         // JWT Auth
+// app.use('/api/productos', require('./routes/productos')); // CRUD de Productos
 
 // Ruta de prueba para verificar que el despliegue fue exitoso
 app.get('/', (req, res) => {
